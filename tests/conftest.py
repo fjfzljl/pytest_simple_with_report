@@ -12,21 +12,30 @@ logger = logging.getLogger("unit test")
 
 
 @pytest.fixture(scope="module")
-def suite_dashwebsetupteardown():
-    logger.info("suite_dashwebsetupteardown fixture start...")
+def suite_setupteardown():
+    logger.info("suite_setupteardown fixture start...")
+
+    logger.info("software install ...")
 
     yield
 
-    logger.info("suite_dashwebsetupteardown fixture end...")
+    logger.info("software uninstall...")
+
+    logger.info("suite_setupteardown fixture end...")
 
 
 @pytest.fixture
-def eachtest_umbcld_setupteardown(request):
-    logger.info("eachtest_umbcld_setupteardown fixture start...")
+def eachtest_setupteardown(request):
+    logger.info("eachtest_setupteardown fixture start...")
+
 
     arg_1 = request.param[0]
-    logger.info(f"setup arg : {arg_1}")
+    logger.info(f"type : {arg_1}")
+
+    logger.info("change system configuration...")
 
     yield
 
-    logger.info("eachtest_umbcld_setupteardown fixture end...")
+    logger.info("recover system configuration...")
+
+    logger.info("eachtest_setupteardown fixture end...")
