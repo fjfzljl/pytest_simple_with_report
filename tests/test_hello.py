@@ -21,8 +21,8 @@ def process(name, check_string):
 @pytest.mark.parametrize(
     "dstring, eachtest_umbcld_setupteardown, name, check_string, expected_result",
     [
-        ("TEST00001 : test hello_name()", ["setup_arg"], "bob", "bob", True),
-        ("TEST00002 : test hello_name()", ["setup_arg"], "bob", "haha", False),
+        ("TEST00001 : test hello_name() match correct name", ["debug"], "bob", "bob", True),
+        ("TEST00002 : test hello_name() incorrect str not in name", ["debug"], "bob", "haha", False),
     ],
     indirect=["eachtest_umbcld_setupteardown"],
 )
