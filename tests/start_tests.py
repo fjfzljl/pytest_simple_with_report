@@ -33,6 +33,7 @@ def run_tests_with_scenarios(scenarios, testmarker, htmlOutput, basetestpath):
                 + scenarios
                 + ' -v -k "'
                 + testmarker
+                + '"'
             )
         else:
             command = (
@@ -46,9 +47,8 @@ def run_tests_with_scenarios(scenarios, testmarker, htmlOutput, basetestpath):
                 + scenarios
                 + ' -v -k "'
                 + testmarker
+                + '"'
             )
-        print(command)
-        res = subprocess.call(command, shell=True)
     else:
         if htmlOutput == "YES":
             command = (
@@ -77,8 +77,8 @@ def run_tests_with_scenarios(scenarios, testmarker, htmlOutput, basetestpath):
                 + scenarios
                 + " -v"
             )
-        print(command)
-        res = subprocess.call(command, shell=True)
+    print(command)
+    res = subprocess.call(command, shell=True)
     return res
 
 
@@ -107,7 +107,7 @@ def main():
 
     basetestpath = os.getcwd()
 
-    scenarios = "test_hello.py"
+    scenarios = "test_student.py"
 
     run_tests_with_scenarios(scenarios, testmarker, htmlOutput, basetestpath)
 

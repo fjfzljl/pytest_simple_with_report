@@ -439,7 +439,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>pytest_report.html</h1>
-    <p>Report generated on 20-Jan-2023 at 14:36:43 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 20-Jan-2023 at 18:36:27 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -458,8 +458,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>test software version</td>
         <td>0.1</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 0.03 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>7 tests ran in 0.07 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">7 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -473,8 +473,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td>TEST00001 : test hello_name() match correct name</td>
-          <td class="col-name">test_hello.py::test_hello_name[TEST00001 : test hello_name() match correct name-eachtest_setupteardown0-bob-bob-True]</td>
+          <td>TEST00001 : test get_name() return correct name</td>
+          <td class="col-name">test_student.py::test_get_name[TEST00001 : test get_name() return correct name-eachtest_setupteardown0-bob-80-bob-True]</td>
           <td class="col-duration">0.00</td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -482,21 +482,93 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 INFO     unit test:conftest.py:46 software install ...
 INFO     unit test:conftest.py:57 eachtest_setupteardown fixture start...
 INFO     unit test:conftest.py:61 type : debug
-INFO     unit test:conftest.py:63 change system configuration...<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     unit test:test_hello.py:16 processing arg name : bob
-INFO     unit test:test_hello.py:17 processing arg check_string : bob<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     unit test:conftest.py:67 recover system configuration...
+INFO     unit test:conftest.py:63 change system configuration...<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     unit test:test_student.py:28 processing arg name : bob
+INFO     unit test:test_student.py:29 processing arg score : 80
+INFO     unit test:test_student.py:30 processing arg check_string : bob<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     unit test:conftest.py:67 recover system configuration...
 INFO     unit test:conftest.py:69 eachtest_setupteardown fixture end...<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td>TEST00002 : test hello_name() incorrect str not in name</td>
-          <td class="col-name">test_hello.py::test_hello_name[TEST00002 : test hello_name() incorrect str not in name-eachtest_setupteardown1-bob-haha-False]</td>
+          <td>TEST00002 : test get_score() return correct score</td>
+          <td class="col-name">test_student.py::test_get_score[TEST00002 : test get_score() return correct score-eachtest_setupteardown0-bob-80-80-True]</td>
           <td class="col-duration">0.00</td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     unit test:conftest.py:57 eachtest_setupteardown fixture start...
 INFO     unit test:conftest.py:61 type : debug
-INFO     unit test:conftest.py:63 change system configuration...<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     unit test:test_hello.py:16 processing arg name : bob
-INFO     unit test:test_hello.py:17 processing arg check_string : haha<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     unit test:conftest.py:67 recover system configuration...
+INFO     unit test:conftest.py:63 change system configuration...<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     unit test:test_student.py:52 processing arg name : bob
+INFO     unit test:test_student.py:53 processing arg score : 80
+INFO     unit test:test_student.py:54 processing arg check_number : 80<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     unit test:conftest.py:67 recover system configuration...
+INFO     unit test:conftest.py:69 eachtest_setupteardown fixture end...<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>TEST00003 : test get_score_level() level A</td>
+          <td class="col-name">test_student.py::test_get_score_level[TEST00003 : test get_score_level() level A-eachtest_setupteardown0-bob-81-A-True]</td>
+          <td class="col-duration">0.00</td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     unit test:conftest.py:57 eachtest_setupteardown fixture start...
+INFO     unit test:conftest.py:61 type : debug
+INFO     unit test:conftest.py:63 change system configuration...<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     unit test:test_student.py:84 processing arg name : bob
+INFO     unit test:test_student.py:85 processing arg score : 81
+INFO     unit test:test_student.py:86 processing arg check_level : A<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     unit test:conftest.py:67 recover system configuration...
+INFO     unit test:conftest.py:69 eachtest_setupteardown fixture end...<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>TEST00004 : test get_score_level() level B</td>
+          <td class="col-name">test_student.py::test_get_score_level[TEST00004 : test get_score_level() level B-eachtest_setupteardown1-bob-80-B-True]</td>
+          <td class="col-duration">0.00</td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     unit test:conftest.py:57 eachtest_setupteardown fixture start...
+INFO     unit test:conftest.py:61 type : debug
+INFO     unit test:conftest.py:63 change system configuration...<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     unit test:test_student.py:84 processing arg name : bob
+INFO     unit test:test_student.py:85 processing arg score : 80
+INFO     unit test:test_student.py:86 processing arg check_level : B<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     unit test:conftest.py:67 recover system configuration...
+INFO     unit test:conftest.py:69 eachtest_setupteardown fixture end...<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>TEST00005 : test get_score_level() level C</td>
+          <td class="col-name">test_student.py::test_get_score_level[TEST00005 : test get_score_level() level C-eachtest_setupteardown2-bob-41-C-True]</td>
+          <td class="col-duration">0.00</td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     unit test:conftest.py:57 eachtest_setupteardown fixture start...
+INFO     unit test:conftest.py:61 type : debug
+INFO     unit test:conftest.py:63 change system configuration...<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     unit test:test_student.py:84 processing arg name : bob
+INFO     unit test:test_student.py:85 processing arg score : 41
+INFO     unit test:test_student.py:86 processing arg check_level : C<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     unit test:conftest.py:67 recover system configuration...
+INFO     unit test:conftest.py:69 eachtest_setupteardown fixture end...<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>TEST00006 : test get_score_level() level D</td>
+          <td class="col-name">test_student.py::test_get_score_level[TEST00006 : test get_score_level() level D-eachtest_setupteardown3-bob-40-D-True]</td>
+          <td class="col-duration">0.00</td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     unit test:conftest.py:57 eachtest_setupteardown fixture start...
+INFO     unit test:conftest.py:61 type : debug
+INFO     unit test:conftest.py:63 change system configuration...<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     unit test:test_student.py:84 processing arg name : bob
+INFO     unit test:test_student.py:85 processing arg score : 40
+INFO     unit test:test_student.py:86 processing arg check_level : D<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     unit test:conftest.py:67 recover system configuration...
+INFO     unit test:conftest.py:69 eachtest_setupteardown fixture end...<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>TEST00007 : test get_score_level() error score </td>
+          <td class="col-name">test_student.py::test_get_score_level[TEST00007 : test get_score_level() error score -eachtest_setupteardown4-bob-101-90-False]</td>
+          <td class="col-duration">0.00</td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     unit test:conftest.py:57 eachtest_setupteardown fixture start...
+INFO     unit test:conftest.py:61 type : debug
+INFO     unit test:conftest.py:63 change system configuration...<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     unit test:test_student.py:84 processing arg name : bob
+INFO     unit test:test_student.py:85 processing arg score : 101
+INFO     unit test:test_student.py:86 processing arg check_level : 90<br/> -----------------------------Captured log teardown------------------------------ <br/>INFO     unit test:conftest.py:67 recover system configuration...
 INFO     unit test:conftest.py:69 eachtest_setupteardown fixture end...
 INFO     unit test:conftest.py:50 software uninstall...
 INFO     unit test:conftest.py:52 suite_setupteardown fixture end...<br/></div></td></tr></tbody></table></body></html>
